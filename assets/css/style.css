@@ -226,7 +226,7 @@ nav{
 /*=================================
   main styling starts here
 =================================*/
-
+/* banner section start */
 .banner {
   padding: 100px 0;
   background:  linear-gradient(rgba(9, 30, 78, 0.6),rgba(9, 30, 78, 0.6)),url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2ZpZmljZSUyMG1lZXRpbmd8ZW58MHwwfDB8fA%3D%3D&w=1000&q=80') no-repeat center;
@@ -283,6 +283,107 @@ p.price-para { margin: 26px 0 37px 0; }
   margin-bottom: 9px;
   text-align: center;
 }
+/* banner section end */
+
+/* offers section start */
+.section-heading {
+  text-align: center;
+  margin: 87px 0;
+}
+
+.section-heading h3 {
+  padding: 18px 0;
+  position: relative;
+  font-size: 40px;
+}
+
+.section-heading h3::before {
+  content: '';
+  border-radius: 2px;
+  position: absolute;
+  width: 55px;
+  top: 8px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgb(51,212,214);
+  height: 3px;
+}
+
+.section-heading p { font-size: 15px; }
+
+.offer-cards {
+  margin: 20px 0;
+  display: flex;
+  gap: 29px;
+  flex-wrap: wrap;
+}
+
+.offer-list {
+  flex-basis: 30%;
+  border-radius: 3px;
+  background: linear-gradient(180deg,rgb(9,137,249),rgb(5,71,130));
+  color: rgb(255, 255, 255);
+}
+
+.loan-price {
+  border-bottom: 1px solid rgb(51,212,214,0.3);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2;
+}
+
+.loan-price img {
+  width: auto;
+  margin: 43px 0;
+}
+
+.loan-price h4 {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.loan-price p {
+  margin-bottom: 16px;
+  color: rgb(51,212,214);
+  font-size: 27px;
+}
+
+.loan-details {
+  padding: 46px;
+}
+
+.loan-items {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7;
+}
+
+.loan-list{
+  position: relative;
+  font-size: 13px;
+}
+
+.loan-list::before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 36%;
+  left: -17px;
+  background: rgb(51,212,214);
+}
+
+.loan-btn {
+  padding: 0 46px 43px 46px;
+}
+
+.loan-btn a {
+  width: 100%;
+  text-align: center;
+}
+/* offers section end */
 
 
 
