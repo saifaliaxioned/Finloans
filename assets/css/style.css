@@ -446,6 +446,49 @@ p.price-para { margin: 26px 0 37px 0; }
 }
 /* about section end */
 
+/* work section start */
+.work {
+  padding: 1px 0 50px 0;
+  background: rgb(245,251,255);
+}
+
+.work .wrapper {
+  padding-bottom: 34px;
+}
+
+.work-items {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 70px;
+}
+
+.work-list {
+  flex-basis: 25%;
+}
+
+.work-list span {
+  padding: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgb(221,240,255);
+  color: rgb(9,137,249);
+  font-weight: bold;
+}
+
+.work-list h4 {
+  padding: 17px 0;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.work-list h4::first-letter { text-transform: uppercase; }
+
+.work-list p {
+  line-height: 1.6;
+}
+
+/* work section end */
 
 /*=================================
   main styling ends here
