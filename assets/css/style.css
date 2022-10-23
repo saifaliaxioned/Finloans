@@ -286,6 +286,11 @@ p.price-para { margin: 26px 0 37px 0; }
 /* banner section end */
 
 /* offers section start */
+.offers {
+  padding-bottom: 68px;
+  margin-bottom: 48px;
+}
+
 .section-heading {
   text-align: center;
   padding: 50px 0 0 0;
@@ -386,7 +391,60 @@ p.price-para { margin: 26px 0 37px 0; }
 }
 /* offers section end */
 
+/* about section start */
+.about-content {
+  padding-bottom: 48px;
+  display: flex;
+  gap: 89px;
+}
 
+.about-image {
+  flex-basis: 40%;
+}
+
+.about-details {
+  margin: 36px 0;
+  flex-basis: 38%;
+}
+
+.about-details h4 {
+  padding: 38px 0;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+
+.about-details p {
+  line-height: 1.6;
+  font-style: 15px;
+}
+
+.about-items {
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.about-list {
+  position: relative;
+  font-weight: 600;
+}
+
+.about-list::before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 36%;
+  left: -20px;
+  background: rgb(10,140,255);
+}
+
+.about-btn {
+  padding: 33px 0 0 0;
+}
+/* about section end */
 
 
 /*=================================
