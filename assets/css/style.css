@@ -612,6 +612,47 @@ p.price-para { margin: 26px 0 37px 0; }
 }
 /* slider section end */
 
+/* companies section start */
+.companies {
+  padding: 40px 0;
+  margin: 30px 0;
+}
+
+.company-items {
+  display: flex;
+  gap: 35px;
+}
+/* companies section end */
+
+/* apply div start */
+.applyDiv {
+  padding: 73px 0;
+  margin: 50px 0;
+  background: linear-gradient(rgba(9, 30, 78, 0.4),rgba(9, 30, 78, 0.4)),url(https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHR5cGluZ3xlbnwwfDB8MHx8&w=1000&q=80) no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
+
+.apply-content {
+  display: flex;
+  padding: 50px 0;
+}
+
+.apply-content p {
+  flex-basis: 60%;
+  color: rgb(255, 255, 255);
+  font-size: 44px;
+}
+
+.apply-content-btn {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* apply div end */
+
 /*=================================
   main styling ends here
 =================================*/
