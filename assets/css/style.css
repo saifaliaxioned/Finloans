@@ -502,6 +502,8 @@ p.price-para { margin: 26px 0 37px 0; }
 }
 
 .accordion-part {
+  padding-top: 34px;
+  margin-top: 44px;
   flex-basis: 34%;
 }
 
@@ -550,11 +552,11 @@ p.price-para { margin: 26px 0 37px 0; }
   padding: 25px 25px 19px 37px;
   font-size: 13px;
   line-height: 1.8;
-  /* display: none; */
+  display: none;
   transition: all .5s ease;
 }
 
-.active-accordion .accordion-list p {
+.active-accordion p {
   display: block;
 }
 /* question section end */
