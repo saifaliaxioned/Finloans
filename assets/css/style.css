@@ -154,9 +154,11 @@ header .wrapper{
   content: '\e3af';
   float: left;
   font-family: 'FontAwesome';
-  background: blue;
+  background: linear-gradient(180deg,rgb(51,212,214),rgb(7, 108, 196));
+  color: rgb(255, 255, 255);
   padding: 10px;
   margin: 0 2% 0 0;
+  border-radius: 50%;
 }
 
 .bar  {
@@ -661,10 +663,115 @@ p.price-para { margin: 26px 0 37px 0; }
   footer styling starts here
 =================================*/ 
 
+.footer-content {
+  padding: 50px 0;
+  display: flex;
+  gap: 90px;
+}
 
+footer .logo {
+  width: 100%;
+  margin: 5px 0 20px 0;
+}
 
+footer .logo a{
+  color: rgb(0,0,0);
+}
 
+.footer-items  {
+  display: flex;
+  gap: 90px;
+}
 
+.footer-list h6 {
+  padding: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.address-items {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-list {
+  line-height: 1.6;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.address-list a,.address-list p,.subscribe-list p,.copyright {
+  color: rgb(142,142,148);
+}
+
+.services-items,.useful-items,.subscribe-items{
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-items {
+  width: 78%;
+}
+
+.services-list a,.useful-list a{
+  padding: 11px 0;
+  color: rgb(142,142,148);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.subscribe-list p {
+  padding: 20px 0;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.subscribe-list form {
+  padding: 3px;
+  display: flex;
+  border: 1px solid rgb(142,142,148,0.3);
+  justify-content: space-between;
+}
+
+.input-group{
+  flex-basis: 70%;
+}
+.input-control{
+  flex-basis: 30%;
+}
+
+.input-group input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-list form,.input-control input{
+  border-radius: 4px;
+}
+
+.input-control input {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  outline: none;
+  background: rgb(10,140,255);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+.copyright {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
 
 
  /*=================================
