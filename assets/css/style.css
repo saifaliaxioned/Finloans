@@ -562,6 +562,7 @@ p.price-para { margin: 26px 0 37px 0; }
 /* question section end */
 
 /* slider section start */
+.slider { padding: 47px 0; }
 .slider .wrapper {
   padding: 35px 0;
   display: flex;
@@ -569,15 +570,45 @@ p.price-para { margin: 26px 0 37px 0; }
 }
 
 .slider-image {
-  flex-basis: 20%;
+  flex-basis: 18%;
+  position: relative;
 }
 
 .slider-image img {
   border-radius: 50%;
 }
 
+.slider-image::before {
+  content: '\f10d';
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(51,212,214);
+  color: rgb(255, 255, 255);
+  font-family: 'FontAwesome';
+  font-size: 20px;
+}
+
 .slider-description {
+  padding: 0 2%;
   flex-basis: 70%;
+}
+
+.slider-description p {
+  padding-top: 40px;
+  width: 85%;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.8;
+} 
+
+.slider-description span {
+  display: block;
+  padding: 17px 0;
+  text-transform: capitalize;
+  color: rgb(142,142,148);
 }
 /* slider section end */
 
