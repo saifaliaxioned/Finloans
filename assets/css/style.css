@@ -561,6 +561,26 @@ p.price-para { margin: 26px 0 37px 0; }
 }
 /* question section end */
 
+/* slider section start */
+.slider .wrapper {
+  padding: 35px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.slider-image {
+  flex-basis: 20%;
+}
+
+.slider-image img {
+  border-radius: 50%;
+}
+
+.slider-description {
+  flex-basis: 70%;
+}
+/* slider section end */
+
 /*=================================
   main styling ends here
 =================================*/
