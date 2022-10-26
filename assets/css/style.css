@@ -120,6 +120,13 @@ li {
   font-size: 14px;
   font-weight: bold;
   text-transform: capitalize;
+  transition: all .5s ease;
+}
+
+.blue-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(51,212,214);
+  box-shadow: 1px 2px 8px rgb(192, 192, 196,0.6);
 }
 
 .grey-text { color: rgb(142,142,148); }
@@ -218,8 +225,14 @@ nav{
   border-radius: 3px;
   padding: 14px 9px;
   font-weight: bold;
+  transition: all .5s ease;
 }
 
+.header-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(51,212,214);
+  border-color: rgb(255, 255, 255);
+}
 
 /*=================================
   Header styling ends here
@@ -517,6 +530,7 @@ p.price-para { margin: 26px 0 37px 0; }
 .accordion-list {
   padding: 20px 0 10px 0;
   border-bottom: 1px solid rgb(142,142,148,.2);
+  cursor: pointer;
 }
 
 .accordian-heading {
@@ -764,6 +778,11 @@ footer .logo a{
   background: rgb(10,140,255);
   color: rgb(255, 255, 255);
   font-size: 12px;
+  transition: all .5s ease;
+}
+
+.input-control input:hover{
+  background: rgb(9, 93, 166);
 }
 
 .copyright {
@@ -772,6 +791,38 @@ footer .logo a{
   font-size: 12px;
   font-weight: bold;
 }
+
+.social-items{
+  display: flex;
+  gap: 10px;
+}
+
+.social-list a{ 
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgb(142,142,148,.3);
+  color: rgb(142,142,148,.3);
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999px;
+  transition: all 0.5s ease;
+}
+
+.social-list a::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "FontAwesome";
+  font-size: 12px;
+  text-indent: 0;
+  transform: translate(-50%,-50%);
+}
+
+.social-list a:hover{ transform: scale(1.2); } 
+.facebook::before { content: '\f39e'; }
+.google::before { content: '\f0d5'; }
+.twitter::before { content: '\f099'; }
+.instagram::before { content: '\f16d'; }
 
 
  /*=================================
