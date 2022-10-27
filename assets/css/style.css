@@ -327,7 +327,10 @@ header .wrapper {
 
 .nav-list a {
   color: rgb(255, 255, 255);
+  transition: all .5s ease;
 }
+
+.nav-list a:hover { color: rgb(51, 212, 214); }
 
 .header-contact {
   font-size: 10px;
@@ -727,6 +730,12 @@ p.price-para {
   line-height: 1.8;
   display: none;
   transition: all 0.5s ease;
+  animation: showtext .3s linear forwards;
+  transform-origin: top;
+}
+@keyframes showtext {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
 }
 
 .active-accordion p {
@@ -907,6 +916,12 @@ footer .logo a {
   font-size: 12px;
   font-weight: bold;
   text-transform: capitalize;
+  transition: all .5s ease;
+}
+
+.services-list a:hover,.useful-list a:hover {
+  color: rgb(51, 212, 214);
+  text-decoration: underline;
 }
 
 .subscribe-list p {
@@ -962,6 +977,24 @@ footer .logo a {
   text-align: center;
   font-size: 12px;
   font-weight: bold;
+}
+
+.copyright a {
+  color: rgb(10, 140, 255);
+  text-transform: capitalize;
+}
+
+.copyright a:hover { text-decoration: underline; }
+.copyright span {
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.heart-icon::before {
+  content: '\f004';
+  text-indent: 0;
+  float: left;
+  font-family: 'FontAwesome';
 }
 
 .social-items {
@@ -1050,7 +1083,6 @@ footer .logo a {
   .question .wrapper { gap: 40px; } 
   .accordion-part h4 { padding: 38px 0 20px; }  
   .accordion-list h5,.accordion-btn a::before { font-size: 13px; }
-  .accordion-list p { font-size: 11px; }
   .accordion-part {
     padding-top: 20px;
     margin-top: 0;
