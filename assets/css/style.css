@@ -796,6 +796,8 @@ p.price-para {
 .company-items {
   display: flex;
   gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* companies section end */
 
@@ -1202,5 +1204,36 @@ footer .logo a {
   footer .wrapper { padding: 0 5%; }
   .footer-list { flex-basis: 45%; }
   .footer-list:last-child { flex-basis: 71%; }
+  /* footer end */
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  /* header start */
+  .logo { 
+    margin: 0;
+    order: 1;
+  }
+
+  .header-contact { display: none; }
+  .section-heading h3 { font-size: 31px; }
+  /* header end */
+
+  /* banner start */
+  .banner { padding: 20px 0 10px 0; }
+  .banner-content { margin-bottom: 30px; }
+  .banner-description { display: none; }
+  /* banner end */
+
+  /* company div start */
+  .company-list { flex-basis: 70%; }
+  /* company div end */
+
+  /* apply div start */
+  .apply-content p { font-size: 30px; }
+  /* apply div end */
+
+  /* footer start */
+  .footer-list:last-child { flex-basis: 90%; }
   /* footer end */
 }
