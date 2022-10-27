@@ -727,6 +727,12 @@ p.price-para {
   line-height: 1.8;
   display: none;
   transition: all 0.5s ease;
+  animation: showtext .3s linear forwards;
+  transform-origin: top;
+}
+@keyframes showtext {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
 }
 
 .active-accordion p {
@@ -1050,7 +1056,6 @@ footer .logo a {
   .question .wrapper { gap: 40px; } 
   .accordion-part h4 { padding: 38px 0 20px; }  
   .accordion-list h5,.accordion-btn a::before { font-size: 13px; }
-  .accordion-list p { font-size: 11px; }
   .accordion-part {
     padding-top: 20px;
     margin-top: 0;
