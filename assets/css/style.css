@@ -985,6 +985,7 @@ footer .logo a {
   color: rgb(255, 0, 255);
 }
 
+.removeScroll { overflow-y: hidden; }
 /*=================================
   footer styling ends here
 =================================*/
