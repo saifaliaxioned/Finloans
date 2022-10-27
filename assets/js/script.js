@@ -1,3 +1,9 @@
+// hamburger function
+var hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click',function () {
+  hamburger.classList.toggle('active-hamburger');
+});
+
 // accordion function
 var accordionList = document.querySelectorAll('.accordion-list');
 accordionList.forEach(function (list) {
