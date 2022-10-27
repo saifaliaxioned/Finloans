@@ -985,6 +985,17 @@ footer .logo a {
 }
 
 .copyright a:hover { text-decoration: underline; }
+.copyright span {
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.heart-icon::before {
+  content: '\f004';
+  text-indent: 0;
+  float: left;
+  font-family: 'FontAwesome';
+}
 
 .social-items {
   display: flex;
