@@ -327,7 +327,10 @@ header .wrapper {
 
 .nav-list a {
   color: rgb(255, 255, 255);
+  transition: all .5s ease;
 }
+
+.nav-list a:hover { color: rgb(51, 212, 214); }
 
 .header-contact {
   font-size: 10px;
@@ -913,6 +916,12 @@ footer .logo a {
   font-size: 12px;
   font-weight: bold;
   text-transform: capitalize;
+  transition: all .5s ease;
+}
+
+.services-list a:hover,.useful-list a:hover {
+  color: rgb(51, 212, 214);
+  text-decoration: underline;
 }
 
 .subscribe-list p {
@@ -969,6 +978,13 @@ footer .logo a {
   font-size: 12px;
   font-weight: bold;
 }
+
+.copyright a {
+  color: rgb(10, 140, 255);
+  text-transform: capitalize;
+}
+
+.copyright a:hover { text-decoration: underline; }
 
 .social-items {
   display: flex;
