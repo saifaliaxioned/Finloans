@@ -363,7 +363,7 @@ header .wrapper {
 }
 
 .banner-form {
-  flex-basis: 38%;
+  flex-basis: 40%;
   padding: 44px;
   background: rgb(255, 255, 255);
   border-radius: 4px;
@@ -535,7 +535,7 @@ p.price-para {
 
 .about-details p {
   line-height: 1.6;
-  font-style: 15px;
+  font-size: 15px;
 }
 
 .about-items {
@@ -970,6 +970,90 @@ footer .logo a {
 =================================*/
 
 /*media query starts*/
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  header .wrapper {
+    width: 100%;
+    padding: 21px 2%;
+  }
+
+  .slider .wrapper { padding: 35px 2%; }
+  .loan-items { padding: 27px; }
+  .loan-btn { padding: 0 27px 43px 27px; }
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  /* header start */
+  .nav-items { gap: 29px; }
+  /* header end */
+
+  /* banner section start */
+  .banner-form h2 { font-size: 20px; }
+  .banner-form p { font-size: 12px; }
+  /* banner section end */
+
+  /* about section start */
+  .about-content { gap: 40px; }
+  .about-details { flex-basis: 45%; }
+  .about-details h4,.accordion-part h4 { font-size: 34px;}
+  .about-list { font-size: 12px; }
+  /* about section end */
+
+  /* question section start */
+  .question .wrapper { gap: 40px; } 
+  .accordion-part h4 { padding: 38px 0 20px; }  
+  .accordion-list h5,.accordion-btn a::before { font-size: 13px; }
+  .accordion-list p { font-size: 11px; }
+  .accordion-part {
+    padding-top: 20px;
+    margin-top: 0;
+    flex-basis: 40%;
+  }
+  /* question section end */
+
+  /* slider section start */
+  .slider-image { flex-basis: 23%; }
+  .slider-description p { 
+    width: 100%;
+    padding-top: 21px;
+    font-size: 15px;
+  }
+  /* slider section end */
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  /* banner section start */
+  .banner-description { flex-basis: 52%; }
+  .banner-form{ flex-basis: 45%; }
+  .banner-description p{ font-size: 32px; }
+  /* banner section end */
+
+  /* offer section start */
+  .offer-cards { gap: 20px; }
+  .loan-items { padding: 15px; }
+  .loan-btn { padding: 0 15px 43px 15px; }
+  .loan-list { font-size: 12px; }
+  /* offer section end */
+
+  /* footer start */
+  footer .logo { margin: 0; }
+  .footer-content { flex-direction: column; }
+  .address { text-align: center; }
+  .social-items { justify-content: center; }
+  .footer-items {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .footer-list {
+    flex-basis: 25%;
+  }
+  /* footer end */
 }
