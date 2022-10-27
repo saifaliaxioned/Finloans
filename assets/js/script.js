@@ -2,6 +2,7 @@
 var hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click',function () {
   hamburger.classList.toggle('active-hamburger');
+  document.documentElement.classList.toggle('removeScroll');
 });
 
 // accordion function
@@ -11,11 +12,6 @@ accordionList.forEach(function (list) {
     if (list.classList.contains('active-accordion')) {
       list.classList.remove('active-accordion');
     } else {
-      // accordionList.forEach(function (list) {
-      //   if (list.classList.contains('active-list')) {
-      //     list.classList.remove('active-list');
-      //   }
-      // })
       var activeList = document.querySelector('.active-accordion');
       if (activeList) {
         activeList.classList.remove('active-accordion');
