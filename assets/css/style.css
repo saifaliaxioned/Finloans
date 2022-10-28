@@ -1155,6 +1155,20 @@ footer .logo a {
 .facebook::before {
   content: "\f39e";
 }
+.google::before {
+  content: "\f0d5";
+}
+.twitter::before {
+  content: "\f099";
+}
+.instagram::before {
+  content: "\f16d";
+}
+
+.facebook:hover{ 
+  border-color: rgb(0, 140, 255);
+  color: rgb(0, 140, 255);
+}
 .google:hover{ 
   border-color: rgb(0, 255, 72);
   color: rgb(0, 255, 72);
