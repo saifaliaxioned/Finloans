@@ -231,9 +231,7 @@ li {
           box-shadow: 1px 2px 8px rgb(192, 192, 196, 0.6);
 }
 
-.grey-text {
-  color: rgb(142, 142, 148);
-}
+.grey-text { color: rgb(142, 142, 148); }
 
 header {
   width: 100%;
@@ -274,23 +272,24 @@ header .wrapper {
 
 .logo a::before {
   content: "\e3af";
+  padding: 10px;
+  border-radius: 50%;
   float: left;
   font-family: "FontAwesome";
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(51, 212, 214)), to(rgb(7, 108, 196)));
   background: -o-linear-gradient(top, rgb(51, 212, 214), rgb(7, 108, 196));
   background: linear-gradient(180deg, rgb(51, 212, 214), rgb(7, 108, 196));
   color: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 50%;
+  font-family: "FontAwesome";
 }
 
 /* hamburger start */
 .hamburger {
+  width: 35px;
+  height: 35px;
   border: 1px solid rgb(255,255,255);
   border-radius: 2px;
   position: relative;
-  width: 35px;
-  height: 35px;
   display: none; 
   cursor: pointer;
 }
@@ -298,12 +297,12 @@ header .wrapper {
 .bar {
   width: 50%;
   height: 2px;
+  border-radius: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
   display: inline-block;
   background-color: rgb(255,255,255);
-  border-radius: 4px;
   text-indent: -99999px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -346,9 +345,7 @@ header .wrapper {
   font-weight: bold;
 }
 
-.nav-list span {
-  text-transform: uppercase;
-}
+.nav-list span { text-transform: uppercase; }
 
 .nav-list a {
   color: rgb(255, 255, 255);
@@ -377,20 +374,20 @@ header .wrapper {
 
 .call-icon::before {
   content: "\f095";
+  margin-right: 5px;
   position: absolute;
   top: 0;
   left: -19px;
   font-family: "FontAwesome";
   color: rgb(51, 212, 214);
-  margin-right: 5px;
 }
 
 .header-btn {
-  color: rgb(51, 212, 214);
-  text-transform: capitalize;
+  padding: 14px 9px;
   border: 1px solid rgb(51, 212, 214);
   border-radius: 3px;
-  padding: 14px 9px;
+  color: rgb(51, 212, 214);
+  text-transform: capitalize;
   font-weight: bold;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -398,9 +395,9 @@ header .wrapper {
 }
 
 .header-btn:hover {
+  border-color: rgb(255, 255, 255);
   background: rgb(255, 255, 255);
   color: rgb(51, 212, 214);
-  border-color: rgb(255, 255, 255);
 }
 
 /*=================================
@@ -454,8 +451,9 @@ header .wrapper {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   padding: 44px;
-  background: rgb(255, 255, 255);
   border-radius: 4px;
+  flex-basis: 40%;
+  background: rgb(255, 255, 255);
 }
 
 .banner-form h2 {
@@ -463,18 +461,10 @@ header .wrapper {
   font-weight: 600;
 }
 
-.banner-form h2::first-letter {
-  text-transform: uppercase;
-}
-.banner-form p {
-  margin: 23px 0 37px 0;
-}
-p.price-para {
-  margin: 26px 0 37px 0;
-}
-.input-group select {
-  width: 100%;
-}
+.banner-form h2::first-letter { text-transform: uppercase; }
+.banner-form p { margin: 23px 0 37px 0; }
+p.price-para { margin: 26px 0 37px 0; }
+.input-group select { width: 100%; }
 
 .input-group select {
   padding: 10px;
@@ -501,9 +491,9 @@ p.price-para {
 }
 
 .section-heading {
-  text-align: center;
   padding: 50px 0 0 0;
   margin: 87px 0;
+  text-align: center;
 }
 
 .section-heading h3 {
@@ -514,21 +504,20 @@ p.price-para {
 
 .section-heading h3::before {
   content: "";
+  width: 55px;
+  height: 3px;
   border-radius: 2px;
   position: absolute;
-  width: 55px;
   top: 8px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: rgb(51, 212, 214);
-  height: 3px;
+  transform: translate(-50%, -50%);
 }
 
-.section-heading p {
-  font-size: 15px;
-}
+.section-heading p { font-size: 15px; }
 
 .offer-cards {
   margin: 20px 0;
@@ -567,8 +556,8 @@ p.price-para {
 }
 
 .loan-price h4 {
-  text-transform: capitalize;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .loan-price p {
@@ -589,23 +578,19 @@ p.price-para {
   gap: 12px;
 }
 
-.loan-list {
-  font-size: 16px;
-}
+.loan-list { font-size: 16px; }
 
 .loan-list::before {
   content: "";
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
   width: 7px;
   height: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
   background: rgb(51, 212, 214);
 }
 
-.loan-btn {
-  padding: 0 48px 43px 48px;
-}
+.loan-btn { padding: 0 48px 43px 48px; }
 
 .loan-btn a {
   width: 100%;
@@ -669,18 +654,16 @@ p.price-para {
 
 .about-list::before {
   content: "";
-  border-radius: 50%;
-  position: absolute;
   width: 7px;
   height: 7px;
+  border-radius: 50%;
+  position: absolute;
   top: 36%;
   left: -20px;
   background: rgb(10, 140, 255);
 }
 
-.about-btn {
-  padding: 33px 0 0 0;
-}
+.about-btn { padding: 33px 0 0 0; }
 /* about section end */
 
 /* work section start */
@@ -689,9 +672,7 @@ p.price-para {
   background: rgb(245, 251, 255);
 }
 
-.work .wrapper {
-  padding-bottom: 34px;
-}
+.work .wrapper { padding-bottom: 34px; }
 
 .work-items {
   padding-bottom: 40px;
@@ -709,8 +690,8 @@ p.price-para {
 
 .work-list span {
   padding: 24px;
-  display: inline-block;
   border-radius: 50%;
+  display: inline-block;
   background: rgb(221, 240, 255);
   color: rgb(9, 137, 249);
   font-weight: bold;
@@ -722,14 +703,8 @@ p.price-para {
   font-weight: bold;
 }
 
-.work-list h4::first-letter,.work-list p::first-letter {
-  text-transform: uppercase;
-}
-
-.work-list p {
-  line-height: 1.6;
-}
-
+.work-list h4::first-letter,.work-list p::first-letter { text-transform: uppercase; }
+.work-list p { line-height: 1.6; }
 /* work section end */
 
 /* question section start */
@@ -739,7 +714,6 @@ p.price-para {
   display: -ms-flexbox;
   display: flex;
   gap: 77px;
-  padding: 0 0 50px 0;
 }
 
 .question-image {
@@ -760,9 +734,7 @@ p.price-para {
   font-size: 42px;
 }
 
-.accordion-part h4::first-letter {
-  text-transform: uppercase;
-}
+.accordion-part h4::first-letter { text-transform: uppercase; }
 
 .accordion-items {
   display: -webkit-box;
@@ -819,6 +791,7 @@ p.price-para {
 
 .accordion-list p {
   padding: 25px 25px 19px 37px;
+  display: none;
   font-size: 13px;
   line-height: 1.8;
   display: none;
@@ -840,15 +813,12 @@ p.price-para {
   100% { -webkit-transform: scaleY(1); transform: scaleY(1); }
 }
 
-.active-accordion p {
-  display: block;
-}
+.active-accordion p { display: block; }
 /* question section end */
 
 /* slider section start */
-.slider {
-  padding: 47px 0;
-}
+.slider { padding: 47px 0; }
+
 .slider .wrapper {
   padding: 35px 0;
   display: -webkit-box;
@@ -861,11 +831,10 @@ p.price-para {
   -ms-flex-preferred-size: 18%;
       flex-basis: 18%;
   position: relative;
+  flex-basis: 18%;
 }
 
-.slider-image img {
-  border-radius: 50%;
-}
+.slider-image img { border-radius: 50%; }
 
 .slider-image::before {
   content: "\f10d";
@@ -887,18 +856,18 @@ p.price-para {
 }
 
 .slider-description p {
-  padding-top: 40px;
   width: 85%;
+  padding-top: 40px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.8;
 }
 
 .slider-description span {
-  display: block;
   padding: 17px 0;
-  text-transform: capitalize;
+  display: block;
   color: rgb(142, 142, 148);
+  text-transform: capitalize;
 }
 /* slider section end */
 
@@ -1106,11 +1075,6 @@ footer .logo a {
   outline: none;
 }
 
-.subscribe-list form,
-.input-control input {
-  border-radius: 4px;
-}
-
 .input-control input {
   width: 100%;
   padding: 12px 10px;
@@ -1124,9 +1088,7 @@ footer .logo a {
   transition: all 0.5s ease;
 }
 
-.input-control input:hover {
-  background: rgb(9, 93, 166);
-}
+.input-control input:hover { background: rgb(9, 93, 166); }
 
 .copyright {
   padding: 50px 0;
@@ -1193,16 +1155,20 @@ footer .logo a {
 .facebook::before {
   content: "\f39e";
 }
-.google::before {
-  content: "\f0d5";
+.google:hover{ 
+  border-color: rgb(0, 255, 72);
+  color: rgb(0, 255, 72);
 }
-.twitter::before {
-  content: "\f099";
+.twitter:hover{ 
+  border-color: rgb(0, 200, 255);
+  color: rgb(0, 200, 255);
 }
-.instagram::before {
-  content: "\f16d";
+.instagram:hover{ 
+  border-color: rgb(255, 0, 255);
+  color: rgb(255, 0, 255);
 }
 
+.removeScroll { overflow-y: hidden; }
 /*=================================
   footer styling ends here
 =================================*/
